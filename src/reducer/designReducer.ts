@@ -7,6 +7,7 @@ function designReducer(state: State, action: Action): State {
     case "TOGGLE":
       return { ...state, isDark: !state.isDark };
     case "INCREMENT":
+      console.log(state.fontSize);
       return { ...state, fontSize: state.fontSize + 1 };
     case "DECREMENT":
       return { ...state, fontSize: state.fontSize - 1 };
